@@ -317,7 +317,9 @@ function Prompt() {
                 </p>
                 <div className="flex flex-wrap justify-center gap-2 max-sm:w-64 max-sm:mx-auto">
                   <div className="inline-flex items-center px-3 py-1 text-xs rounded-full  bg-amber-400/10 text-amber-400 border border-amber-400/20">
-                    Pollinations AI
+                    <a href="https://magic666.top" target="_blank" className="hover:underline">
+                      即刻AI
+                    </a>
                   </div>
                   <div className="inline-flex items-center px-3 py-1 text-xs rounded-full  bg-emerald-500/10 text-emerald-500 border border-emerald-500/20">
                     {t("Prompt.allFree")}
@@ -542,7 +544,7 @@ function Prompt() {
                     <AccordionContent>
                       {t.rich("Prompt.faq.theFifthAnswer", {
                         link: (chunks) => (
-                          <a href="https://pollinations.ai/" target="_blank">
+                          <a href="https://magic666.top" target="_blank">
                             {chunks}
                           </a>
                         ),

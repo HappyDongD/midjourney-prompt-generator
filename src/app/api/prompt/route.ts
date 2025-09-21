@@ -101,7 +101,7 @@ async function thinking({ model, presets, text, onMessage }: ThinkingConfig) {
 }
 
 export async function POST(req: NextRequest) {
-  const { model = DEFAULT_MODEL, presets = {}, text } = await req.json();
+  const { presets = {}, text } = await req.json(); // 不读取前端传的model
 
   const { readable, writable } = new TransformStream();
   const writer = writable.getWriter();
@@ -112,9 +112,18 @@ export async function POST(req: NextRequest) {
     writer.close();
   };
 
-  const models = Object.keys(modelList);
+  // 强制使用配置文件中的模型
+  const model = DEFAULT_MODEL;
+
+  // 打印调试信息
+  console.log("=== Prompt API 调试信息 ===");
+  console.log("强制使用的 model:", model);
+  console.log("BASE_URL:", BASE_URL);
+  console.log("API_KEY:", API_KEY ? `${API_KEY.substring(0, 8)}...` : "未设置");
+  console.log("========================");
+
   thinking({
-    model: models.includes(model) ? model : models[0],
+    model: model, // 强制使用配置文件中的模型
     presets,
     text,
     onMessage: async (event, data, finished = false) => {

@@ -1,5 +1,5 @@
 import { memo } from "react";
-import { Github } from "lucide-react";
+import { Sparkles } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import LocaleSwitcher from "@/components/locale-switcher";
@@ -28,15 +28,15 @@ function Header({ className, showBg }: Props) {
         <div className="flex items-center">
           <Button
             className="h-8 w-8"
-            title={t("Prompt.openSource")}
+            title="magic666 即刻AI"
             variant="ghost"
             size="icon"
           >
             <a
-              href="https://github.com/Amery2010/midjourney-prompt-generator"
+              href="https://magic666.top"
               target="_blank"
             >
-              <Github className="h-5 w-5" />
+              <Sparkles className="h-5 w-5" />
             </a>
           </Button>
           <LocaleSwitcher />

@@ -5,7 +5,7 @@
   },
   "Prompt": {
     "name": "提示词",
-    "title": "生成令人惊叹的图片提示词",
+    "title": "即刻AI-协助你生成令人惊叹的图片提示词",
     "description": "提出您的想法，让 AI 发挥想象力，每个人都能成为提示词大师。",
     "openSource": "开源代码",
     "allFree": "完全免费",
@@ -103,7 +103,7 @@
       "theFourthQuestion": "提示生成器可以免费使用吗？",
       "theFourthAnswer": "是的，您可以在不登录的情况下<strong>完全免费</strong>使用。没有隐藏费用，无需信用卡，也没有使用限制。",
       "theFifthQuestion": "这个提示词生成器是由哪个 AI 服务提供？",
-      "theFifthAnswer": "目前，这个提示词生成器是由 <link>Pollinations AI</link> 提供技术支持。它提供了多种免费的 AI 模型，本项目通过这些免费模型来生成提示词。您可以在文本输入框的右上角选择您偏好的 AI 模型。"
+      "theFifthAnswer": "目前，这个提示词生成器是由 <link>即刻AI</link> 提供技术支持。它提供了多种免费的 AI 模型，本项目通过这些免费模型来生成提示词。您可以在文本输入框的右上角选择您偏好的 AI 模型。"
     },
     "disclaimer": "提示词由 AI 生成，可能不准确或内容不当。",
     "loadMore": "加载更多历史",
